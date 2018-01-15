@@ -1,0 +1,52 @@
+.content {
+    margin: 60px;
+}
+
+.card {
+    box-shadow: 2px 2px 2px;
+    margin-left: 30px;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 150%;
+    overflow-x: hidden;
+}
+
+.textWhite {
+    color: white;
+}
+
+.card-img-top {
+    margin: 10px auto;
+}
+
+@keyframes typing { from { width: 0; } }
+@keyframes cursor { 50% { border-color: transparent; } }
+.typingText {
+    border-right: .1em solid;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 202px; /* Number of characters */
+    animation: typing 3s steps(10),cursor 1s step-end infinite;
+}
+
+.my-4 {
+    border-top-color: rgb(100, 100, 100);
+}
+
+.linkZp {
+    color: rgb(200, 200, 200);
+}
+
+.linkZp:hover {
+    color: #fff;
+    text-decoration-line: none;
+}
