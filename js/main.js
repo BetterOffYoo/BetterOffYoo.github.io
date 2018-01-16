@@ -1,7 +1,3 @@
-function zuopinClick() {
-    alert('没有作品');
-}
-
 function xiangxiClick() {
     alert('没有介绍');
 }
