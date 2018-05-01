@@ -14,8 +14,24 @@ window._CCSettings = {
                 "audio/buttonClick.wav",
                 0
             ],
+            "72gZearThPyLTPaL6IplKu": [
+                "audio/jump.mp3",
+                0
+            ],
+            "cbP8AmHpdLFLPpRPHs8sEY": [
+                "audio/lose.mp3",
+                0
+            ],
+            "6ebAka56ZNGpSmOYkZjGPs": [
+                "audio/prop.mp3",
+                0
+            ],
             "7el0BdoulDJqwfQNw1Z1kh": [
                 "audio/start.mp3",
+                0
+            ],
+            "50n17gCAdAwod1w1iHNTK/": [
+                "audio/win.mp3",
                 0
             ],
             "3baobo1OxP95eV+w/Iv1ci": [
@@ -682,7 +698,7 @@ window._CCSettings = {
         "07/079f367f-713e-485c-8b12-57ae2c069495.json": "29860",
         "09/0981a16d8.json": "0f1d9",
         "0c/0cdd80c8.json": "2d29f",
-        "0f/0fb317704.json": "1705a",
+        "0f/0fb317704.json": "fe884",
         "2f/2fdf6d82-19d7-4cd9-a824-5a49a64a238c.json": "01bfb",
         "34/34b6e91c-8a2d-4205-b5f8-82b9a817d6eb.json": "4ca89",
         "39/39acc0c7-bb80-44e9-af81-7dabe98c9152.json": "8313e",
@@ -697,7 +713,11 @@ window._CCSettings = {
         "f7/f7642d5c-3c16-4491-93a5-2483d0c4d189.json": "5a7c1",
         "ff/ff77b8da-578b-4915-87f8-705c2f856b2c.json": "58eff",
         "assets/audio/buttonClick.wav": "a3e0d",
+        "assets/audio/jump.mp3": "b513a",
+        "assets/audio/lose.mp3": "ed703",
+        "assets/audio/prop.mp3": "c0162",
         "assets/audio/start.mp3": "289d0",
+        "assets/audio/win.mp3": "1aebf",
         "assets/image/button/AutoAtlas-1.png": "554c8",
         "assets/image/game-scene/ground/07/05.png": "db246",
         "assets/image/game-scene/ground/07/06.png": "3cac5",
