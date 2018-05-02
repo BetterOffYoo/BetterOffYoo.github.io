@@ -170,7 +170,7 @@
     }
 
     if (window.jsb) {
-        require('src/settings.c0e5b.js');
+        require('src/settings.22214.js');
         require('src/jsb_polyfill.js');
         boot();
     }
