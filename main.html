@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="sms:12306?body=81982139">发短信</a>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="#">
+            <input id="name" type="text" />
+            <a href="#">发送短信</a>
+        </form>
+    </body>
+    <script>
+        function doAction() {
+            var u = navigator.userAgent;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            var name = document.getElementById('name').value;
+            var tel = '12306';
+            if (isiOS) {
+                document.getElementsByTagName('a')[0].href =
+                    'sms://' + tel + '?body=' + name;
+            } else {
+                document.getElementsByTagName('a')[0].href =
+                    'sms://' + tel + '&body=' + name;
+            }
+        }
+    </script>
 </html>
