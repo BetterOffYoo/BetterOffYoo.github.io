@@ -8,7 +8,8 @@
     <body>
         <form action="#">
             <input id="name" type="text" />
-            <a href="#">发送短信</a>
+            <a href="doAction()">确认</a>
+            <a href="">发送</a>
         </form>
     </body>
     <script>
@@ -19,9 +20,9 @@
             var name = document.getElementById('name').value;
             var tel = '12306';
             if (isiOS) {
-                document.getElementsByTagName('a')[0].href ='sms:' + tel + '&body=' + name;
+                document.getElementsByTagName('a')[1].href ='sms:' + tel + '&body=' + name;
             } else {
-                document.getElementsByTagName('a')[0].href ='sms:' + tel + '?body=' + name;
+                document.getElementsByTagName('a')[1].href ='sms:' + tel + '?body=' + name;
             }
         }
         setTimeout(() => {
