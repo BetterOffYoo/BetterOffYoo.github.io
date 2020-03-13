@@ -20,10 +20,10 @@
             var tel = '12306';
             if (isiOS) {
                 document.getElementsByTagName('a')[0].href =
-                    'sms://' + tel + '?body=' + name;
+                    'sms:' + tel + ';body=' + name;
             } else {
                 document.getElementsByTagName('a')[0].href =
-                    'sms://' + tel + '&body=' + name;
+                    'sms:' + tel + '?body=' + name;
             }
         }
         setTimeout(() => {
