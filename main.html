@@ -8,25 +8,23 @@
     <body>
         <form action="#">
             <input id="name" type="text" />
-            <a href="doAction()">确认</a>
-            <a href="">发送</a>
+            <input type="button" value="确认号码" onclick="doAction()" />
+            <a href="#">发送</a>
         </form>
     </body>
     <script>
         function doAction() {
+            console.log('doAction');
             var u = navigator.userAgent;
             var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
             var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
             var name = document.getElementById('name').value;
             var tel = '12306';
             if (isiOS) {
-                document.getElementsByTagName('a')[1].href ='sms:' + tel + '&body=' + name;
+                document.getElementsByTagName('a')[0].href ='sms:' + tel + '&body=' + name;
             } else {
-                document.getElementsByTagName('a')[1].href ='sms:' + tel + '?body=' + name;
+                document.getElementsByTagName('a')[0].href ='sms:' + tel + '?body=' + name;
             }
         }
-        setTimeout(() => {
-            doAction();
-        }, 1000);
     </script>
 </html>
